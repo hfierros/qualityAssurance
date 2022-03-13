@@ -2,21 +2,23 @@
 ## Uso de checkstyle. 
 
 Instrucciones:
-Dale una leida a la p
+
+Dale una leida a la pagina de [checkstyle](https://checkstyle.org/index.html) y al plugin de [checkstyle de maven](https://maven.apache.org/plugins/maven-checkstyle-plugin/).
+
 
 Instala Java y Maven en tu sistema
 
 Asegurate que ambos corren sin problema: 
 
-```
+```sh
 java --version
 mvn --version
 ```
 
 Clona este repositorio en tu máquina. 
 
-``` 
-git -clone https://github.com/hfierros/qualityAssurance.git
+```sh
+git -clone git@github.com:hfierros/qualityAssurance.git
 ```
 
 Crea un branch con tu nombre: 
@@ -53,5 +55,8 @@ Tu misión en esta práctica, si decides aceptarla será:
 2. El estilo por defecto es el de la compañía [Sun](https://checkstyle.org/sun_style.html) (creadores de Java) y esta definido en el archivo 
 [sun_checks.xml](https://maven.apache.org/plugins-archives/maven-checkstyle-plugin-2.14/config/sun_checks.html), 
 sin embargo chekstyle puede usar otros estilos. Altera el archivo pom.xml para usar el estilo de [Google](https://checkstyle.org/google_style.html)
-3. Una de las limitantes que tiene el estilo de google, es que solo acepta lineas de 100 caracteres. Copia el ```google_checks.xml```, y editalo para que acepte lineas de 110 
-caracteres. Altera el ```pom.xml``` para que use tus reglas, y prueba que funcione con una linea de comentarios de más de 100 lineas
+3. Una de las limitantes que tiene el estilo de google, es que solo acepta lineas de 100 caracteres. Altera el ```pom.xml``` para que use tus reglas, y prueba que funcione con una linea de comentarios de más de 100 lineas
+
+Haz un push de tu branch, con el ```pom.xml``` modificado. Si no tienes usuario de github, enviame en correo el archivo como attachment. 
+
+
