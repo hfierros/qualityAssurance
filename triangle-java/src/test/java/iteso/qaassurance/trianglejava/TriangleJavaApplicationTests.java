@@ -38,7 +38,7 @@ class TriangleJavaApplicationTests {
 	public void TestInvalidParametersController() throws Exception {
 		when(triangleJava.triangleType(0,0,0)).thenThrow(new IllegalArgumentException("Mock exception"));
 		IllegalArgumentException ex = Assertions.assertThrows(IllegalArgumentException.class, ()-> {
-			String testVal = triangleJavaController.triangle(0,0,0);
+			String testVal = triangleJavaController.triangle(0, 0,0);
 		});
 
 		Assertions.assertEquals("Mock exception", ex.getMessage());
